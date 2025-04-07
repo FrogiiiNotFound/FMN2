@@ -1,0 +1,163 @@
+.home {
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__container {
+        padding: 150px 0px 50px 0px;
+        @include t_Inter();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__texts {
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+        max-width: 830px;
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 22px;
+        font-size: r(15);
+        line-height: p(19, 15);
+        z-index: 10;
+        font-weight: 800 !important;
+    }
+
+    &__title {
+        font-weight: 700 !important;
+        padding-top: 500px;
+        padding-bottom: 60px;
+        @include t_Inter();
+        font-size: 25px;
+        line-height: p(36, 30);
+        text-align: center;
+        z-index: 10;
+    }
+
+    &__bg-white {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 3;
+
+        & img {
+            width: 10000px;
+            height: 400px;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+    }
+
+    &__light {
+        position: absolute;
+        z-index: 4;
+
+        bottom: 100px;
+        left: -270px;
+    }
+
+    &__light2 {
+        position: absolute;
+        z-index: 4;
+
+        bottom: -150px;
+        right: -250px;
+    }
+
+    &__text {
+        font-weight: 600;
+        margin-top: 15px;
+    }
+
+    &__button:hover {
+        background-color: rgb(40, 92, 177);
+    }
+
+    &__button {}
+
+    &__text-wrap {
+        position: relative;
+    }
+
+    &__text-img {
+        position: absolute;
+        bottom: 0;
+        left: -40px;
+    }
+
+    &__text-img-2 {
+        position: absolute;
+        top: 0px;
+        right: -40px;
+    }
+
+    &__text span {
+        font-weight: 700;
+        color: #306fd5;
+    }
+}
+
+
+.animation-word {
+    display: inline-block;
+}
+
+@media (max-width: 528px) {
+    .home {
+
+
+        padding: 0px 0px 50px 0px;
+
+        &__container {
+            padding: 89px 0px 0px 0px;
+        }
+
+        // height: 780px;
+
+        &__bg {
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__bg-white {
+            bottom: 50px;
+        }
+
+        &__title {
+            padding-top: 200px;
+            padding-bottom: 10px;
+        }
+
+        &__text {
+            text-align: center;
+            max-width: 170px;
+            font-size: 12px;
+        }
+    }
+
+    .home__subtitle {
+        font-size: r(13);
+    }
+}
