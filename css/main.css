@@ -303,6 +303,9 @@ a {
 .home__button:hover {
   background-color: rgb(40, 92, 177);
 }
+.home__button {
+  padding: 20px 40px !important;
+}
 .home__text-wrap {
   position: relative;
 }
@@ -315,6 +318,7 @@ a {
   position: absolute;
   top: 0px;
   right: -40px;
+  rotate: 60deg;
 }
 .home__text span {
   font-weight: 700;
@@ -345,7 +349,7 @@ a {
     bottom: 50px;
   }
   .home__title {
-    padding-top: 280px;
+    padding-top: 260px;
     padding-bottom: 10px;
   }
   .home__text {
@@ -481,6 +485,10 @@ a {
   border-radius: 150px;
   background: rgba(48, 111, 213, 0.1);
   display: inline-block;
+}
+.info_dontSkip span {
+  font-weight: 700;
+  color: #306fd5;
 }
 .info__container {
   padding: 125px 20px 25px;

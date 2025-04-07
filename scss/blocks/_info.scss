@@ -1,5 +1,6 @@
 .info {
     position: relative;
+
     &_dontSkip {
         text-transform: uppercase;
         @include t_Inter();
@@ -11,6 +12,11 @@
         border-radius: 150px;
         background: rgba(48, 111, 213, 0.1);
         display: inline-block;
+
+        & span {
+            font-weight: 700;
+            color: #306fd5;
+        }
     }
 
     &__container {

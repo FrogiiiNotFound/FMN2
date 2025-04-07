@@ -91,7 +91,9 @@
         background-color: rgb(40, 92, 177);
     }
 
-    &__button {}
+    &__button {
+        padding: 20px 40px !important;
+    }
 
     &__text-wrap {
         position: relative;
@@ -107,6 +109,7 @@
         position: absolute;
         top: 0px;
         right: -40px;
+        rotate: 60deg;
     }
 
     &__text span {
@@ -146,7 +149,7 @@
         }
 
         &__title {
-            padding-top: 280px;
+            padding-top: 260px;
             padding-bottom: 10px;
         }
 
