@@ -113,6 +113,11 @@
     &__button {
         cursor: pointer;
     }
+
+    &__subtext span {
+        font-weight: 700;
+        color: #306fd5;
+    }
 }
 
 .blue {

@@ -345,7 +345,7 @@ a {
     bottom: 50px;
   }
   .home__title {
-    padding-top: 200px;
+    padding-top: 280px;
     padding-bottom: 10px;
   }
   .home__text {
@@ -1370,6 +1370,10 @@ a {
 }
 .popup__button {
   cursor: pointer;
+}
+.popup__subtext span {
+  font-weight: 700;
+  color: #306fd5;
 }
 
 .blue {
