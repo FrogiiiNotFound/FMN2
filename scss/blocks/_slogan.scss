@@ -1,0 +1,201 @@
+.slogan {
+
+    padding: 100px 0px;
+    background-color: black;
+
+    &__container {
+        position: relative;
+    }
+
+    &__first-title {
+        position: relative;
+        font-family: 'Steelfish', sans-serif;
+        font-weight: 400;
+        font-size: 247px;
+        line-height: 90%;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 94px;
+        z-index: 2;
+    }
+
+    &__second-title {
+        position: relative;
+        font-family: 'Steelfish', sans-serif;
+        font-weight: 400;
+        font-size: 247px;
+        line-height: 90%;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+        z-index: 2;
+    }
+
+    &__image {
+        margin-top: -290px;
+        margin-bottom: 68px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__subtitle {
+        max-width: 584px;
+        font-family: "Integral CF Regular";
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #fff;
+    }
+
+    &__text {
+        max-width: 405px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: #fff;
+    }
+
+    &__truck img {
+        width: 1000px;
+    }
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+.slogan__truck {
+    position: absolute;
+    /* Или absolute, в зависимости от ваших требований */
+    right: 100%;
+    /* Начальное положение вне экрана */
+
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+    .slogan {
+        &__first-title {
+            font-size: 130px;
+        }
+
+        &__second-title {
+            font-size: 130px;
+        }
+
+        &__image img {
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        &__subtitle {
+            font-size: 31px;
+        }
+
+        &__text {
+            max-width: 255px;
+            font-size: 14px;
+        }
+
+        &__truck img {
+            width: 700px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        &__first-title {
+            font-size: 100px;
+        }
+
+        &__second-title {
+            font-size: 100px;
+        }
+
+        &__image img {
+            margin-top: 130px;
+        }
+
+        &__subtitle {
+            font-size: 21px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+        &__content {
+            gap: 10px;
+        }
+
+        &__truck img {
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .slogan {
+
+        padding: 70px 0px;
+
+        &__first-title {
+            font-size: 50px;
+            margin-bottom: 510px;
+            margin-left: 20px;
+        }
+
+        &__second-title {
+            font-size: 50px;
+            margin-right: 20px;
+        }
+
+        &__image img {
+            margin-top: -240px;
+            margin-left: -450px;
+            margin-bottom: 80px;
+
+            width: 1200px;
+        }
+
+        &__image {
+            margin-bottom: 100px;
+        }
+
+        &__slogan-text {
+            max-width: 155px;
+            font-size: 10px;
+        }
+
+        &__truck img {
+            width: 600px;
+        }
+
+        &__content {
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        &__subtitle {
+            margin-bottom: 10px;
+        }
+    }
+
+    .slogan__truck {
+        position: absolute;
+        /* Или absolute, в зависимости от ваших требований */
+        right: 50%;
+        /* Начальное положение вне экрана */
+    
+    }
+}
